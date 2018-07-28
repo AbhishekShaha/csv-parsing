@@ -28,14 +28,9 @@ f = open("data.csv", 'wt')
 try:
     writer = csv.writer(f)
     writer.writerow( ('FirstName','LastName', 'Age') )
-    for i in range(100-3):
+    for i in range(10000-3):
         row = (rand_fname(),rand_lname(),random.randint(1, 100))
         writer.writerow(row)
 finally:
     f.close()
 
-
-#import boto3
-#s3 = boto3.resource('s3')
-#bucket = s3.Bucket('genesys-code-test')
-#s3.Object('genesys-code-test', 'Desktop/genesys/data.csv').put(Body=open('Desktop/genesys/data.csv', 'rb'))

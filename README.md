@@ -33,7 +33,7 @@ f = open("data.csv", 'wt')
 try:
     writer = csv.writer(f)
     writer.writerow( ('FirstName','LastName', 'Age') )
-    for i in range(100-3):
+    for i in range(10000-3):
         row = (rand_fname(),rand_lname(),random.randint(1, 100))
         writer.writerow(row)
 finally:
@@ -52,6 +52,9 @@ finally:
 
 This program line by line reads csv file created in Task1 and and writes that lines to `AWS NoSql DynamoDB`
 `Usage : ` Once you get the csv file from Task1 upload the file into s3 bucket using aws cli command line or GUI or using boto3 library, the lambda function will trigger on the put event of aws s3, read the data from csv file and write the into into DynamoDB.
+
+![](https://cloudcraft.co/view/adf8cf19-daad-4eb4-9136-84f2470ac49b?key=vSJ6v-rvOafh0SlJhenzdA)
+
 ## Code Snippet
 
 ```python
