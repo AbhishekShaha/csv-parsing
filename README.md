@@ -54,6 +54,7 @@ This program line by line reads csv file created in Task1 and and writes that li
 `Usage : ` Once you get the csv file from Task1 upload the file into s3 bucket using aws cli command line or GUI or using boto3 library, the lambda function will trigger on the put event of aws s3, read the data from csv file and write the into into DynamoDB.
 
 ![](https://cloudcraft.co/view/adf8cf19-daad-4eb4-9136-84f2470ac49b?key=vSJ6v-rvOafh0SlJhenzdA)
+![](https://github.com/AbhishekShaha/csv-parsing/tree/master/screenshots/a.png)
 
 ## Code Snippet
 
