@@ -48,6 +48,16 @@ finally:
 
 `$ pip install boto3`
 
+## Usage
+```
+Install pre-requisits.
+
+Use script task1.py 
+chmod a+x task1.py
+python3 task1.py
+
+```
+
 # Task2 ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 This program line by line reads csv file created in Task1 and and writes that lines to `AWS NoSql DynamoDB`
@@ -91,6 +101,12 @@ def csv_reader(event, context):
 
 ## Usage
 ```
+1. Create IAM Role 
+2. Create DynamoDB table with primary key
+3. Create s3 bucket
+4. Create lambda function using task2.py file 
+5. upload csv file to s3 bucket to trigger the function
+
 aws s3 --profile abhishek cp Desktop/genesys/data.csv s3://genesys-code-test/
 Or
 Use boto3 as:
