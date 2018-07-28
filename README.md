@@ -101,3 +101,4 @@ bucket = s3.Bucket('genesys-code-test')
 s3.Object('genesys-code-test', 'Desktop/genesys/data.csv').put(Body=open('Desktop/genesys/data.csv', 'rb'))
 ```
 
+References [here](https://stackoverflow.com/questions/18834636/random-word-generator-python#49524775)
