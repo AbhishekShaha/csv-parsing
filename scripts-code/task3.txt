@@ -1,0 +1,11 @@
+Task 3: 
+
+Performance related problem: 
+
+1.	Large amount of data needs huge amount of Memory and CPU, I tried running first task and it took long time to generate the csv file. 
+
+Solutions: 
+
+1.	To improve speed, I quickly created spot instance of size m5.large to in half price to get my work done for first task and since this use case was suitable for spot instance. 
+
+2.	I used AWS Lambda & DynamoDB & S3 as part of my solution because of various reasons such as to avoid provisioning of infra, accelerate performance etc.  
